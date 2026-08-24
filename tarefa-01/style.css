@@ -1,0 +1,18 @@
+h1 {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    text-align: center;
+    background-color: #333;
+   
+}
+.container {
+    background-color: #101010;
+    padding: auto 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
