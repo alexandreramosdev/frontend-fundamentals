@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Opacidade em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Exemplos de Opacidade em CSS</h1>
+        <p>Explore o uso da propriedade <code>opacity</code> e funções de cor com canal alfa (<code>rgba</code> e <code>hsla</code>).</p>
+    </header>
+
+    <main class="container">
+        <!-- 1. Propriedade Opacity -->
+        <section class="opacity-section">
+            <h2>1. A Propriedade <code>opacity</code></h2>
+            <p class="description">A propriedade <code>opacity</code> define a transparência de todo o elemento, incluindo seu conteúdo e filhos.</p>
+            
+            <div class="grid-boxes">
+                <div class="demo-box opacity-100">100% (Padrão - 1)</div>
+                <div class="demo-box opacity-75">75% (0.75)</div>
+                <div class="demo-box opacity-50">50% (0.5)</div>
+                <div class="demo-box opacity-25">25% (0.25)</div>
+            </div>
+        </section>
+
+        <!-- 2. Herança de Opacity -->
+        <section class="opacity-section">
+            <h2>2. Herança de Opacity nos Filhos</h2>
+            <p class="description">Elementos filhos herdam a opacidade do pai, o que pode afetar a legibilidade do texto interno.</p>
+            
+            <div class="parent-box opacity-parent">
+                <div class="child-box">
+                    <h3>Elemento Pai (opacity: 0.6)</h3>
+                    <p>Este texto herda a transparência do pai, ficando translúcido.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. RGBA (Fundo Transparente sem afetar o texto) -->
+        <section class="opacity-section">
+            <h2>3. Cores com Canal Alfa (<code>rgba</code> e <code>hsla</code>)</h2>
+            <p class="description">Para tornar apenas o fundo transparente sem afetar o texto ou filhos, use <code>rgba()</code> ou <code>hsla()</code>.</p>
+            
+            <div class="grid-boxes">
+                <div class="rgba-box bg-rgba-light">
+                    <h3>Fundo RGBA Claro</h3>
+                    <p>Texto 100% opaco com fundo translúcido.</p>
+                </div>
+                <div class="rgba-box bg-rgba-dark">
+                    <h3>Fundo RGBA Escuro</h3>
+                    <p>Texto 100% opaco com fundo translúcido.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Interação com Hover -->
+        <section class="opacity-section">
+            <h2>4. Transparência Dinâmica (Hover)</h2>
+            <p class="description">Alterar a opacidade no estado <code>:hover</code> é ótimo para imagens, botões e cards.</p>
+            
+            <div class="grid-boxes">
+                <div class="demo-box opacity-hover">Hover Opacity (Reduzir)</div>
+                <div class="demo-box hover-reveal">Hover Reveal (Revelar)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 - Fundamentos de Frontend</p>
+    </footer>
+</body>
+</html>
