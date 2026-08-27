@@ -1,0 +1,188 @@
+/* Reset básico e tipografia */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.site-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.site-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.site-header code {
+    background: #eef2f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #c7254e;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.shadow-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-section h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.description code {
+    background: #eef2f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #c7254e;
+}
+
+/* Caixa padrão de demonstração */
+.demo-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #475569;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* 1. Box Shadow Exemplos */
+.grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.shadow-soft {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-hard {
+    box-shadow: 6px 6px 0px #334155;
+    border-color: #334155;
+}
+
+.shadow-colored {
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+    border-color: #bfdbfe;
+}
+
+.shadow-multiple {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(16, 185, 129, 0.15);
+}
+
+.shadow-inset {
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #f8fafc;
+}
+
+/* 2. Text Shadow Exemplos */
+.text-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.text-shadow-basic {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-neon {
+    font-size: 2rem;
+    color: #fff;
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    text-shadow: 0 0 5px #38bdf8, 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+}
+
+.text-shadow-3d {
+    font-size: 2.2rem;
+    color: #3b82f6;
+    text-shadow: 1px 1px 0 #1d4ed8, 2px 2px 0 #1e40af, 3px 3px 0 #1e3a8a, 4px 4px 8px rgba(0,0,0,0.4);
+}
+
+.text-shadow-multi {
+    font-size: 2rem;
+    color: #ec4899;
+    text-shadow: 0px 3px 0px #f43f5e, 0px 14px 10px rgba(0,0,0,0.15), 0px 24px 2px rgba(0,0,0,0.1);
+}
+
+/* 3. Hover Effects */
+.shadow-hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+}
+
+.shadow-hover-lift {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hover-lift:hover {
+    box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.3);
+    transform: translateY(-4px);
+    border-color: #93c5fd;
+    color: #2563eb;
+}
+
+/* Rodapé */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .text-shadow-basic, .text-shadow-neon, .text-shadow-3d, .text-shadow-multi {
+        font-size: 1.5rem;
+    }
+}
