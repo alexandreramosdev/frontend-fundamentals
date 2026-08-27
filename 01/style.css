@@ -1,0 +1,66 @@
+html,
+body {
+  background: linear-gradient(to right, #4a90e2, #9013fe);
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.container {
+  padding: auto 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typewriter {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #f0f0f0;
+  animation:
+    typing 4s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30ch;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.transition {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #4a90e2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.transition:hover {
+  background-color: #4a90e2;
+  color: #f0f0f0;
+}
