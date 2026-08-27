@@ -1,0 +1,186 @@
+/* Reset básico e tipografia */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.site-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.site-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.border-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.border-section h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.description code {
+    background: #eef2f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #c7254e;
+}
+
+/* Caixa padrão de demonstração */
+.demo-box {
+    background: #ffffff;
+    border: 3px solid #cbd5e1;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #475569;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* 1. Estilos de Borda */
+.grid-styles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.style-solid { border-style: solid; border-color: #3b82f6; }
+.style-dashed { border-style: dashed; border-color: #10b981; }
+.style-dotted { border-style: dotted; border-color: #f59e0b; }
+.style-double { border-style: double; border-width: 6px; border-color: #ec4899; }
+.style-groove { border-style: groove; border-color: #8b5cf6; }
+.style-ridge { border-style: ridge; border-color: #06b6d4; }
+.style-inset { border-style: inset; border-color: #64748b; }
+.style-outset { border-style: outset; border-color: #64748b; }
+.style-none { border-style: none; background: #f8fafc; }
+
+/* 2. Largura e Cor */
+.flex-examples {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-examples .demo-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.custom-width {
+    border-width: 2px 6px 10px 4px; /* topo, direita, baixo, esquerda */
+    border-style: solid;
+    border-color: #3b82f6;
+}
+
+.individual-colors {
+    border-style: solid;
+    border-width: 4px;
+    border-top-color: #ef4444;
+    border-right-color: #10b981;
+    border-bottom-color: #3b82f6;
+    border-left-color: #f59e0b;
+}
+
+/* 3. Border Radius */
+.grid-radius {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    align-items: center;
+}
+
+.radius-small {
+    border-radius: 8px;
+}
+
+.radius-large {
+    border-radius: 24px;
+}
+
+.radius-pill {
+    border-radius: 50px;
+}
+
+.radius-circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius-complex {
+    border-radius: 30px 10px 50px 5px;
+    background: #f0fdf4;
+    border-color: #22c55e;
+}
+
+/* 4. Bordas Individuais e Shorthand */
+.side-border {
+    border: none;
+    border-left: 6px solid #6366f1;
+    background: #eef2ff;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.shorthand-border {
+    border: 3px dashed #0ea5e9;
+    background: #f0f9ff;
+}
+
+/* Rodapé */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .flex-examples {
+        flex-direction: column;
+    }
+}
