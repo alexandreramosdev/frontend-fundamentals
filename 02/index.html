@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Layout CSS: Float, Flexbox e Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Evolução dos Layouts CSS</h1>
+        <p>Exemplos práticos de Float, Flexbox e Grid Layout</p>
+    </header>
+
+    <main class="container">
+        <!-- 1. Float Layout -->
+        <section class="layout-section">
+            <h2>1. Float Layout (Legado)</h2>
+            <p class="description">Utilizado antigamente para layouts em colunas. Exige técnicas como <code>clearfix</code> para limpar os flutuamentos.</p>
+            
+            <div class="float-demo clearfix">
+                <div class="float-col sidebar">Sidebar (Float Left)</div>
+                <div class="float-col main-content">Conteúdo Principal (Float Left)</div>
+            </div>
+        </section>
+
+        <!-- 2. Flexbox Layout -->
+        <section class="layout-section">
+            <h2>2. Flexbox Layout (Unidimensional)</h2>
+            <p class="description">Ideal para alinhar itens em uma única dimensão (linha ou coluna), facilitando espaçamentos e alinhamentos verticais/horizontais.</p>
+            
+            <div class="flex-demo">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <!-- 3. Grid Layout -->
+        <section class="layout-section">
+            <h2>3. Grid Layout (Bidimensional)</h2>
+            <p class="description">O sistema de layout mais poderoso para CSS, permitindo controlar linhas e colunas simultaneamente com precisão.</p>
+            
+            <div class="grid-demo">
+                <div class="grid-item header-area">Header</div>
+                <div class="grid-item sidebar-area">Sidebar</div>
+                <div class="grid-item content-area">Conteúdo Principal</div>
+                <div class="grid-item footer-area">Footer</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 - Fundamentos de Frontend</p>
+    </footer>
+</body>
+</html>
