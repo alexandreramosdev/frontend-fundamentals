@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="form-page">
+      <section class="form-card" aria-labelledby="form-title">
+        <header class="form-header">
+          <p class="eyebrow">Fundamentos de HTML e CSS</p>
+          <h1 id="form-title">Entre em contato</h1>
+          <p>Preencha o formulário abaixo e envie sua mensagem.</p>
+        </header>
+
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Nome completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Digite seu nome"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="voce@exemplo.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Telefone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(00) 00000-0000"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Assunto</label>
+              <select id="subject" name="subject" required>
+                <option value="" selected disabled>Selecione uma opção</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="orcamento">Orçamento</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field-full">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Escreva sua mensagem"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>Preferência de contato</legend>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="contact" value="email" checked />
+                <span>E-mail</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="contact" value="phone" />
+                <span>Telefone</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="terms">
+            <input type="checkbox" name="terms" required />
+            <span>Concordo com o uso dos meus dados para retorno.</span>
+          </label>
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
