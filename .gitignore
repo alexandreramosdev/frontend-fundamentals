@@ -1,0 +1,18 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# Ambiente
+.env
+.env.*
+!.env.example
